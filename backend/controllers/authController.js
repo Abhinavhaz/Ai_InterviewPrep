@@ -39,7 +39,7 @@ return jwt.sign({id:userID},process.env.JWT_SECRET_KEY,{expiresIn:"7d"});
         })
         console.log("registered user",user)
     } catch (error) {
-        res.status(500).json({message:"Internal Server Error",error:error.message})
+        res.status(500).json({message:"Internal Server Error register",error:error.message})
     }
 }
 
@@ -64,7 +64,7 @@ try {
     })
     console.log("logged in ",user)
 } catch (error) {
-   res.status(500).json({message:"Internal Server Error",error:error.message}) 
+   res.status(500).json({message:"Internal Server Error loginUser",error:error.message}) 
 }
 }
 

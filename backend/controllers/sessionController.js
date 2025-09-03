@@ -83,7 +83,7 @@ const deleteSession = async (req, res) => {
         await  session.deleteOne()
         res.status(200).json({success:true,message:"Session deleted"})
     } catch (error) {
-        res.status(500).json({message:"Internal Server Error",error:error.message})
+        res.status(500).json({message:"Internal Server Error deleteSession",error:error.message})
     }
 }
 

@@ -40,7 +40,7 @@ onLearnMore,
   className="relative bg-white/80 backdrop-blur-xl rounded-2xl mb-6 
              overflow-hidden shadow-lg border border-gray-200/40
              transition-transform hover:scale-[1.01]
-             w-full md:w-[90vw] lg:w-[90vw]"
+             w-full md:w-[80vw] lg:w-[80vw]"
 >
 
       {/* Gradient border effect */}
@@ -119,7 +119,7 @@ onLearnMore,
         >
           <div
             className="mt-4 text-gray-700 bg-gradient-to-r from-gray-50 via-white to-gray-50 
-                       px-5 py-4 rounded-xl border border-gray-100"
+                       px-5 py-4 rounded-xl border border-gray-100 "
             ref={contentRef}
           >
             <AIResponsePreview content={answer} />

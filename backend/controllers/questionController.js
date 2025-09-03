@@ -50,7 +50,7 @@ const togglePinQuestion = async (req, res) => {
         res.status(200).json({question})
         
     } catch (error) {
-        res.status(500).json({message:"Internal Server Error",error:error.message})
+        res.status(500).json({message:"Internal Server Error togglePinQuestion",error:error.message})
     }
 }
 
@@ -70,7 +70,7 @@ const updateQuestionNote = async (req, res) => {
 
         res.status(200).json({question})
     } catch (error) {
-     res.status(500).json({message:"Internal Server Error",error:error.message})  
+     res.status(500).json({message:"Internal Server Error updateQuestionNote",error:error.message})  
     }
 }
 
